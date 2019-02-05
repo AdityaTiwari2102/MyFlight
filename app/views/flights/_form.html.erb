@@ -1,0 +1,14 @@
+<%= form_for(@flight) do |f| %>
+  <%= render 'shared/error_messages', object: @flight %>
+
+  <%= f.label :airline_name %>
+  <%= f.text_field :airline_name, class: 'form-control' %>
+
+  <%= f.label :flight_code %>
+  <%= f.text_field :flight_code, class: 'form-control' %>
+
+  <%= f.label :airplane_type %>
+  <%= f.text_field :airplane_type, class: 'form-control' %>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

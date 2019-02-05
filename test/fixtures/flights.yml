@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  airline_name: MyString
+  flight_code: MyString
+  airplane_type: MyString
+
+two:
+  airline_name: MyString
+  flight_code: MyString
+  airplane_type: MyString

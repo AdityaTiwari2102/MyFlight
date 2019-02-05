@@ -1,0 +1,24 @@
+<p style="padding: 30px 0px">
+  <strong>Airline Name:</strong>
+  <%= @flight.airline_name %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>Flight Code:</strong>
+  <%= @flight.flight_code %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <strong>Airplane Type:</strong>
+  <%= @flight.airplane_type %>
+</p>
+
+<li class="list_style">
+  <%= link_to '<button type="button" class="btn">Edit</button>'.html_safe, edit_flight_path(@flight) %>
+  <%= link_to '<button type="button" class="btn">Back</button>'.html_safe, flights_path %>
+</li>
+
+<br>
+
+<li class="list_style">
+  <%#= link_to '<button type="button" class="btn">Add Routes</button>'.html_safe,
+  new_route_path(:flight_id => @flight.id) %>
+  <%#= link_to '<button type="button" class="btn">Show Routes</button>'.html_safe,
+  route_path(:flight_id => @flight.id) %>
+</li>
